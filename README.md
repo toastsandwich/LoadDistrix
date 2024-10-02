@@ -56,16 +56,14 @@ Load Distrix is a simple HTTP load balancer written in Go. It distributes incomi
 
    ```yaml
    backend:
-   ```
-
-- host: "server1"
-  url: "http://127.0.0.1:8081"
-- host: "server2"
-  url: "http://127.0.0.1:8082"
+    - host: "server1"
+      url: "http://127.0.0.1:8081"
+    - host: "server2"
+      url: "http://127.0.0.1:8082"
 
   ...continue with your backend configuration
 
-````
+```
 
 3. Build and run the load balancer:
 
